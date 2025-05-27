@@ -94,7 +94,7 @@ export default function ClassicTemplate({
         <Box
           sx={{
             width: { xs: "100vw", sm: 400 },
-            height: { xs: "100vh", sm: 700 },
+            height: { xs: "100dvh", sm: 700 },
             bgcolor: "rgb(237,236,231)",
             boxShadow: { sm: 6 },
             borderRadius: { sm: 4 },
@@ -125,7 +125,7 @@ export default function ClassicTemplate({
                       borderRadius: "15px",
                       overflow: "hidden",
                       width: "100%",
-                      height: { xs: "100vh", sm: 700 },
+                      height: { xs: "100dvh", sm: 700 },
                       backgroundImage: `url("/images/intro.jpg")`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -144,7 +144,7 @@ export default function ClassicTemplate({
                       borderRadius: "15px",
                       overflow: "hidden",
                       width: "100%",
-                      height: { xs: "100vh", sm: 700 },
+                      height: { xs: "100dvh", sm: 700 },
                       backgroundImage: `url("/images/intro2.jpg")`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
