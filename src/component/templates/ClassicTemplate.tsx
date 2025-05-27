@@ -216,34 +216,36 @@ export default function ClassicTemplate({
                         style={{ overflow: "visible" }}
                         loop={true}
                       >
-                        {galleryImages?.map((subitem: any, index: number) => (
-                          <SwiperSlide
-                            key={`banner-${subitem}-${index}`}
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
-                          >
-                            <Box
-                              sx={{
-                                width: "350px",
-                                height: "350px",
+                        {galleryImages?.map(
+                          (subitem: string, index: number) => (
+                            <SwiperSlide
+                              key={`banner-${subitem}-${index}`}
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
                               }}
                             >
                               <Box
-                                width="100%"
-                                height="100%"
-                                style={{
-                                  borderRadius: "15px",
-                                  backgroundImage: `url(${subitem})`,
-                                  backgroundSize: "cover",
-                                  backgroundPosition: "center",
+                                sx={{
+                                  width: "350px",
+                                  height: "350px",
                                 }}
-                              />
-                            </Box>
-                          </SwiperSlide>
-                        ))}
+                              >
+                                <Box
+                                  width="100%"
+                                  height="100%"
+                                  style={{
+                                    borderRadius: "15px",
+                                    backgroundImage: `url(${subitem})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                  }}
+                                />
+                              </Box>
+                            </SwiperSlide>
+                          )
+                        )}
                       </Swiper>
                     </Box>
                     <Typography
